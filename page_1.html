@@ -1,0 +1,205 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - simple layout: website html and css</title>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left,#5f2c82,#dc2424,#5f2c82);
+    background-size: 200%
+}
+header{
+    background-color: rgba(255,255,255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+.logo {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fafafa;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-left: 50px;
+    font-family: 'Saira Stencil One', cursive;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 10px; 
+    border-bottom: 2px solid #fff;
+}
+
+ul li a {
+    font-size: 1.1em;
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+ul li a:hover{
+    color: rgba(255,255,255, .5)
+}
+
+.contact button{
+    background: #b8263f;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    padding: 5px 13px;
+    color: #fafafa;
+    margin-right: 50px;
+    font-size: 1.3em;
+    font-weight: 400;
+    transition: .3s;
+    cursor: pointer;
+}
+.contact button:hover{
+    background: #dc2424
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 90%;
+    padding: 50px;
+    margin: auto;
+}
+
+.content .cont{
+    text-align: center;
+    width: 40%;
+    float: left;
+    margin-right: 50px;
+    padding: 40px 0 0 0;
+}
+
+.cont h1 {
+    font-family: 'Saira Stencil One', cursive;
+    margin: 0 0 20px 20px;
+    color: #fafafa;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.cont p {
+    font-family: 'Slabo 27px', serif;
+    font-size: 1em;
+    color: rgba(255,255,255, .5);
+    margin: 0 0 20px 20px;
+    width: 100%;
+    line-height: 1.5;
+    letter-spacing: 3px
+}
+
+.buttons-two {
+    width: 50%;
+    height: auto;
+    float: right;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.buttons-two img {
+    display: block;
+    margin: 10px auto 30px auto;
+}
+
+.buttons-two button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: #fafafa;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-size: .9em;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.buttons-two button:hover {
+    background-color: orangered;
+    border: 1px solid orangered
+}
+
+.buttons-two .mst {
+    background-color: orangered;
+    border: 1px solid orangered
+}
+
+.buttons-two .mst:hover {
+    background: transparent;
+    border: 1px solid #fff
+}
+  </style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<div class="up">
+<div class="nav">
+<header>
+<div class="logo">logohere</div>
+<nav>
+<ul>
+<li><a href="#">home</a></li>
+<li><a href="#">servive</a></li>
+<li><a href="#">more</a></li>
+</ul>
+</nav>
+<a href="#" class="contact"><button>contact me</button></a>
+</header>
+</div>
+<div class="content">
+<div class="cont">
+<h1>genius code channel</h1>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+a galley of type and scrambled it to make a type specimen book.
+</p>
+</div>
+<div class="buttons-two">
+<img src="https://www.flickr.com/photos/183118666@N04/?" />
+<button type="button" class="mst">watch here</button>
+<button type="button">subscribe</button>
+</div>
+</div>
+</div>
+</body>
+</html>
